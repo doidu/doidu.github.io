@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="include.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Aeron Valzado</title>
   </head>
   <body>
     <div class="flex">
-      <div class="w-6/12 h-screen bg-gray-200 sticky top-0 pl-72 pt-32 mb-auto">
-        <div class="block mb-auto">
+      <div
+        class="w-6/12 h-screen bg-gray-200 sticky top-0 pl-72 pt-32 mb-auto group"
+      >
+        <div class="block mb-auto z-50">
           <h1 class="text-5xl font-bold mb-4">Aeron Valzado</h1>
           <h3 class="text-xl font-bold mb-4">Computer Science Student</h3>
           <h6 class="text-md mb-4">
@@ -19,22 +22,22 @@
           <ul class="list-none mt-10">
             <li class="mb-2 my-3 text-lg">
               <a
-                href="#"
-                class="ps-3 pr-28 py-1 rounded-md text-gray-700 hover:bg-gray-300"
+                href="#introduction-text"
+                class="ps-3 pr-28 py-1 rounded-md text-gray-700 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
                 >Home</a
               >
             </li>
             <li class="mb-2 my-3 text-lg">
               <a
-                href="#"
-                class="ps-3 pr-24 py-1 rounded-md text-gray-700 hover:bg-gray-300"
+                href="#projects-content"
+                class="ps-3 pr-24 py-1 rounded-md text-gray-700 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
                 >Projects</a
               >
             </li>
             <li class="mb-2 my-3 text-lg">
               <a
                 href="#"
-                class="ps-3 pr-6 py-1 rounded-md text-gray-700 hover:bg-gray-300"
+                class="ps-3 pr-6 py-1 rounded-md text-gray-700 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
                 >About & Contact</a
               >
             </li>
@@ -85,66 +88,110 @@
           </a>
         </div>
       </div>
-      <div class="w-8/12 bg-white p-4">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-        <br /><br />
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-        <br /><br /><br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-        <br /><br />
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-        <br /><br /><br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-        <br /><br />
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-        <br /><br /><br /><br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-        <br /><br />
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-        <br /><br /><br /><br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-        <br /><br />
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-        <br /><br /><br /><br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-        <br /><br />
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
+      <div class="block w-9/12 bg-white p-4 justify-around">
+        <div
+          id="introduction-text"
+          class="text-center text-pretty px-24 py-20 mb-20 slide-ttb relative delay-250 bounce sliding-ttb w-full h-[30%]"
+        >
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            autem debitis aperiam modi reiciendis placeat non, corrupti laborum
+            at culpa harum optio? Dolore temporibus repudiandae omnis enim et
+            minima laboriosam? Nemo nam nihil incidunt veritatis, recusandae
+            alias quisquam repellat unde dolores provident distinctio tenetur
+            perspiciatis ex natus repudiandae. Nisi, mollitia sit ex animi earum
+            repudiandae autem dolore laboriosam necessitatibus possimus!
+            Explicabo, quas in maxime aspernatur nemo animi dicta iste inventore
+            sapiente possimus iure iusto suscipit illum quos doloribus ea
+            delectus quibusdam deleniti odit temporibus. Assumenda reiciendis
+            nobis sit placeat soluta.
+          </p>
+        </div>
+        <div
+          id="projects-content"
+          class="pb-14 ml-7 z-0 slide-ltr relative delay-350 bounce sliding-ltr w-fit h-fit mb-16"
+        >
+          <h1 class="text-3xl font-bold">Recent Projects</h1>
+        </div>
+        <div id="projects-slide" class="flex justify-evenly flex-wrap">
+          <div
+            id="projects-slide-1"
+            class="inline-block mb-7 py-20 z-10 slide-ltr relative delay-350 bg-orange-300/30 bounce sliding-ltr w-[30%] h-[35%]"
+          >
+            <div class="justify-items-center">
+              <img src="GUIcalcu.png" alt="" class="px-7" />
+              <p class="mt-5">Simple Calculator GUI</p>
+            </div>
+          </div>
+          <div
+            id="projects-slide-2"
+            class="inline-block py-20 z-10 slide-ltr relative delay-350 bg-orange-300/30 bounce sliding-ltr w-[30%] h-[35%]"
+          >
+            <div class="justify-items-center">
+              <img src="GUIcalcu.png" alt="" class="px-7" />
+              <p class="mt-5">Simple Calculator GUI</p>
+            </div>
+          </div>
+          <div
+            id="projects-slide-3"
+            class="inline-block py-20 z-10 slide-ltr relative delay-350 bg-orange-300/30 bounce sliding-ltr w-[30%] h-[35%]"
+          >
+            <div class="justify-items-center">
+              <img src="GUIcalcu.png" alt="" class="px-7" />
+              <p class="mt-5">Simple Calculator GUI</p>
+            </div>
+          </div>
+          <div
+            id="projects-slide-4"
+            class="inline-block py-20 z-10 slide-ltr relative delay-350 bg-orange-300/30 bounce sliding-ltr w-[30%] h-[35%]"
+          >
+            <div class="justify-items-center">
+              <img src="GUIcalcu.png" alt="" class="px-7" />
+              <p class="mt-5">Simple Calculator GUI</p>
+            </div>
+          </div>
+          <div
+            id="projects-slide-5"
+            class="inline-block py-20 z-10 slide-ltr relative delay-350 bg-orange-300/30 bounce sliding-ltr w-[30%] h-[35%]"
+          >
+            <div class="justify-items-center">
+              <img src="GUIcalcu.png" alt="" class="px-7" />
+              <p class="mt-5">Simple Calculator GUI</p>
+            </div>
+          </div>
+          <div
+            id="projects-slide-6"
+            class="inline-block py-20 z-10 slide-ltr relative delay-350 bg-orange-300/30 bounce sliding-ltr w-[30%] h-[35%]"
+          >
+            <div class="justify-items-center">
+              <img src="GUIcalcu.png" alt="" class="px-7" />
+              <p class="mt-5">Simple Calculator GUI</p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="introduction-text"
+          class="text-center text-pretty px-24 py-20 mb-44"
+        >
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            autem debitis aperiam modi reiciendis placeat non, corrupti laborum
+            at culpa harum optio? Dolore temporibus repudiandae omnis enim et
+            minima laboriosam? Nemo nam nihil incidunt veritatis, recusandae
+            alias quisquam repellat unde dolores provident distinctio tenetur
+            perspiciatis ex natus repudiandae. Nisi, mollitia sit ex animi earum
+            repudiandae autem dolore laboriosam necessitatibus possimus!
+            Explicabo, quas in maxime aspernatur nemo animi dicta iste inventore
+            sapiente possimus iure iusto suscipit illum quos doloribus ea
+            delectus quibusdam deleniti odit temporibus. Assumenda reiciendis
+            nobis sit placeat soluta.
+          </p>
+        </div>
       </div>
     </div>
   </body>
-
   <footer>
-    <div class="mt-auto justify-items-center h-44 text-center">
+    <div class="mt-auto justify-items-center h-44 text-center z-50">
       <p class="pt-10">
         &copy; Copyright, All Rights Reserved. ron 2024.<br />
         Built with

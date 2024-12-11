@@ -122,3 +122,15 @@
     clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
   }
 }
+
+.danhda {
+  font-family: "DanhDa-Bold", monospace;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.migo {
+  font-family: "migo-regular", monospace;
+  font-weight: normal;
+  font-style: normal;
+}

@@ -2,3 +2,6 @@ https://www.creative-tim.com/twcomponents
 https://kan.io/works
 https://brittanychiang.com/#about
 https://robbowen.digital/
+https://yuta-abe.com/about
+https://zenorocha.com/
+https://github.com/amitozdeol/awesome-dev-websites

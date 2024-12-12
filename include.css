@@ -47,7 +47,6 @@
 .sliding-ltr {
   animation-name: sliding-ltr;
   animation-duration: 700ms;
-
   animation-fill-mode: forwards;
 }
 
@@ -129,8 +128,30 @@
   font-style: normal;
 }
 
-.migo {
-  font-family: "migo-regular", monospace;
+.miso {
+  font-family: "miso-regular", monospace;
   font-weight: normal;
   font-style: normal;
+}
+:root {
+  font-family: "miso-regular", monospace;
+  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "miso-regular", monospace;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in forwards;
 }

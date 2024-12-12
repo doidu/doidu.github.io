@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-y-scroll">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,41 +18,44 @@
     <script type="text/javascript">
       import "boxicons";
     </script>
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
     <title>Aeron Valzado</title>
   </head>
 
   <body>
     <div class="flex">
-      <div class="w-6/12 h-screen sticky top-0 pl-72 pt-32 mb-auto group">
+      <div
+        class="w-6/12 h-screen sticky z-50 top-0 pl-60 pt-20 mb-auto group bg-white"
+      >
         <div class="block mb-auto z-50">
           <h1 class="text-9xl tracking-normal mb-4 danhda">ron</h1>
           <h3 class="text-3xl mb-4 tracking-wider danhda">
             Computer Science Student
           </h3>
-          <h6 class="text-md mb-4 migo">
+          <h6 class="text-lg mb-4 miso">
             I wanna be a billionaire so f*cking bad,<br />
             buy all of the things I never had
           </h6>
-          <ul class="list-none mt-10 danhda text-3xl tracking-widest">
+          <ul class="list-none mt-10 danhda text-2xl tracking-widest">
             <li class="mb-2 my-3">
               <a
                 href="#"
-                class="ps-2 pr-[7.96rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
+                class="ps-2 pr-[6.13rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
                 >About</a
               >
             </li>
             <li class="mb-2 my-3">
               <a
-                href="#projects-content"
-                class="ps-2 pr-[5.9rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
+                href="#projects"
+                class="ps-2 pr-[4.5rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
                 >Projects</a
               >
             </li>
             <li class="mb-2 my-3">
               <a
-                href="#education"
-                class="ps-2 pr-[4.991rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
-                >Education</a
+                href="#contact"
+                class="ps-2 pr-[5rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
+                >Contact</a
               >
             </li>
           </ul>
@@ -86,29 +89,30 @@
           ></a>
         </div>
       </div>
-      <div class="block w-9/12 bg-white p-4 justify-around">
-        <section class="mb-40">
-          <div
-            class="text-center text-pretty text-xl px-24 pt-40 slide-ttb relative delay-250 bounce sliding-ttb w-full h-[30%]"
-            style="font-family: miso-regular"
-          >
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Quibusdam autem debitis aperiam modi reiciendis placeat non,
-              corrupti laborum at culpa harum optio? Dolore temporibus
-              repudiandae omnis enim et minima laboriosam? Nemo nam nihil
-              incidunt veritatis, recusandae alias quisquam repellat unde
-              dolores provident distinctio tenetur perspiciatis ex natus
-              repudiandae. Nisi, mollitia sit ex animi earum repudiandae autem
-              dolore laboriosam necessitatibus possimus! Explicabo, quas in
-              maxime aspernatur nemo animi dicta iste inventore sapiente
-              possimus iure iusto suscipit illum quos doloribus ea delectus
-              quibusdam deleniti odit temporibus. Assumenda reiciendis nobis sit
-              placeat soluta.
-            </p>
+      <div class="block w-9/12 bg-white p-4 justify-around pr-60">
+        <section id="about" class="mb-60 scroll-mt-28 mb-96">
+          <div class="ml-7">
+            <div
+              class="text-center text-pretty text-xl z-40 px-24 pt-40 slide-ttb relative delay-500 bounce sliding-ttb w-full h-[30%]"
+            >
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quibusdam autem debitis aperiam modi reiciendis placeat non,
+                corrupti laborum at culpa harum optio? Dolore temporibus
+                repudiandae omnis enim et minima laboriosam? Nemo nam nihil
+                incidunt veritatis, recusandae alias quisquam repellat unde
+                dolores provident distinctio tenetur perspiciatis ex natus
+                repudiandae. Nisi, mollitia sit ex animi earum repudiandae autem
+                dolore laboriosam necessitatibus possimus! Explicabo, quas in
+                maxime aspernatur nemo animi dicta iste inventore sapiente
+                possimus iure iusto suscipit illum quos doloribus ea delectus
+                quibusdam deleniti odit temporibus. Assumenda reiciendis nobis
+                sit placeat soluta.
+              </p>
+            </div>
           </div>
         </section>
-        <section id="projects-content" class="mb-24">
+        <section id="projects" class="mb-60 scroll-mt-28">
           <div class="pb-14 ml-7 z-0">
             <div
               class="mb-14 z-0 slide-ltr relative delay-350 bounce sliding-ltr w-fit h-fit"
@@ -116,12 +120,21 @@
               <h1 class="text-3xl font-bold danhda">Recent Projects</h1>
             </div>
             <div class="grid grid-flow-dense grid-rows-2 grid-cols-2 gap-10">
-              <div class="bg-gray-500 rounded-md">
-                <h3>2017 - 2020</h3>
-                <h6>Academy of Saint John - La Salle Green Hills Supervised</h6>
-                <p>Junior High School</p>
+              <div
+                class="bg-gray-500 rounded-xl z-20 p-32"
+                data-aos="fade-down-right"
+                data-aos-offset="200"
+              >
+                <h3>2022 - Present</h3>
+                <h6>Lyceum of the Philippines - Cavite</h6>
+                <p>College - Bachelor of Science in Computer Science</p>
               </div>
-              <div class="bg-gray-500 rounded-md">
+              <div
+                class="bg-gray-500 rounded-xl z-20 p-32"
+                data-aos="fade-down-right"
+                data-aos-delay="200"
+                data-aos-offset="200"
+              >
                 <h3>2020 - 2022</h3>
                 <h6>Lyceum of the Philippines - Cavite</h6>
                 <p>
@@ -129,61 +142,55 @@
                   Mathematics
                 </p>
               </div>
-              <div class="bg-gray-500 rounded-md col-span-2">
-                <h3>2022 - Present</h3>
-                <h6>Lyceum of the Philippines - Cavite</h6>
-                <p>College - Bachelor of Science in Computer Science</p>
+              <div
+                class="bg-gray-500 rounded-xl z-10 p-32 col-span-2 scroll-mb-28"
+                data-aos="fade-down-right"
+                data-aos-offset="-20"
+                data-aos-delay="50"
+              >
+                <h3>2017 - 2020</h3>
+                <h6>Academy of Saint John - La Salle Green Hills Supervised</h6>
+                <p>Junior High School</p>
               </div>
             </div>
           </div>
         </section>
-        <section id="education">
+        <section id="contact" class="scroll-mt-28">
           <div class="pb-14 ml-7 z-0">
             <div
               class="mb-10 z-0 slide-ltr relative delay-350 bounce sliding-ltr w-fit h-fit"
             >
-              <h1 class="text-3xl font-bold danhda">Education</h1>
+              <h1 class="text-3xl font-bold danhda">Contact</h1>
             </div>
-            <div
-              class="grid grid-flow-row-dense grid-cols-3 grid-rows-1 gap-10"
-            >
-              <div class="bg-gray-500 rounded-md p-14">
-                <h3>2017 - 2020</h3>
-                <h6>Academy of Saint John - La Salle Green Hills Supervised</h6>
-                <p>Junior High School</p>
-              </div>
-              <div class="bg-gray-500 rounded-md p-14">
-                <h3>2020 - 2022</h3>
-                <h6>Lyceum of the Philippines - Cavite</h6>
-                <p>
-                  Senior High School - Science, Technology, Engineering, and
-                  Mathematics
-                </p>
-              </div>
-              <div class="bg-gray-500 rounded-md p-14">
-                <h3>2022 - Present</h3>
-                <h6>Lyceum of the Philippines - Cavite</h6>
-                <p>College - Bachelor of Science in Computer Science</p>
-              </div>
+            <div class="justify-items-center py-52">
+              <h1>CENTER</h1>
             </div>
           </div>
         </section>
+        <footer class="">
+          <div class="mt-auto justify-items-center h-44 text-center z-50 miso">
+            <p class="pt-10">
+              &copy; Copyright, All Rights Reserved. ron 2024.<br />
+              Built with
+              <a
+                class="underline underline-offset-4"
+                href="https://tailwindcss.com/"
+                >Tailwind CSS</a
+              >. All Text Set Using
+              <a
+                class="underline underline-offset-4"
+                href="#https://republi.sh/#danhda/info"
+                >Danh Da</a
+              >, and <a class="underline underline-offset-4" href="#">Miso</a>.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
+    <script src="config.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-  <footer>
-    <div class="mt-auto justify-items-center h-44 text-center z-50 migo">
-      <p class="pt-10">
-        &copy; Copyright, All Rights Reserved. ron 2024.<br />
-        Built with
-        <a class="underline underline-offset-4" href="https://tailwindcss.com/"
-          >Tailwind CSS</a
-        >. All Text Set Using <a class="underline underline-offset-4" href="#"
-        >Dandha</a
-      >, and <a class="underline underline-offset-4" href="#"
-      >Migo</a
-    >.
-      </p>
-    </div>
-  </footer>
 </html>

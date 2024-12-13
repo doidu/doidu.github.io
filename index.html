@@ -41,14 +41,14 @@
   <body class="">
     <div class="flex">
       <div
-        class="w-6/12 h-screen sticky z-30 top-0 pl-60 pt-20 mb-auto bg-white"
+        class="w-6/12 h-screen sticky z-30 top-0 pl-60 pt-20 mb-auto bg-zinc-100"
       >
         <div class="block mb-auto z-30">
-          <h1 class="text-9xl tracking-normal mb-4 danhda">ron</h1>
-          <h3 class="text-3xl mb-4 tracking-wider danhda">
+          <h1 class="text-9xl tracking-normal mb-4 danhda text-black">ron</h1>
+          <h3 class="text-3xl mb-4 tracking-wider danhda text-black">
             Computer Science Student
           </h3>
-          <h6 class="text-lg mb-4 miso">
+          <h6 class="text-lg mb-4 miso text-black">
             I wanna be a billionaire so f*cking bad,<br />
             buy all of the things I never had
           </h6>
@@ -56,56 +56,62 @@
             <li class="mb-2 my-3">
               <a
                 href="#"
-                class="ps-2 pr-[6.13rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
+                class="ps-2 pr-[6.13rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-zinc-400 duration-[400ms,700ms] transition-[color,box-shadow]"
                 >About</a
               >
             </li>
             <li class="mb-2 my-3">
               <a
                 href="#projects"
-                class="ps-2 pr-[4.5rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
+                class="ps-2 pr-[4.5rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-zinc-400 duration-[400ms,700ms] transition-[color,box-shadow]"
                 >Projects</a
               >
             </li>
             <li class="mb-2 my-3">
               <a
                 href="#contact"
-                class="ps-2 pr-[5rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-gray-400 duration-[400ms,700ms] transition-[color,box-shadow]"
+                class="ps-2 pr-[5rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-zinc-400 duration-[400ms,700ms] transition-[color,box-shadow]"
                 >Contact</a
               >
             </li>
           </ul>
         </div>
 
-        <div class="block mt-auto absolute bottom-0 mb-32">
+        <div class="block mt-auto absolute bottom-0 mb-24">
           <a
             href="https://github.com/doidu"
             class="inline-block mr-2 ease-in-out duration-300 hover:scale-[1.3] active:opacity-40"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <i class="bx bxl-github bx-md"></i
+            <i class="bx bxl-github bx-md text-black"></i
           ></a>
           <a
             href="https://linkedin.com/"
             class="inline-block mr-2 ease-in-out duration-300 hover:scale-[1.3] active:opacity-40"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <i class="bx bxl-linkedin-square bx-md"></i
+            <i class="bx bxl-linkedin-square bx-md text-black"></i
           ></a>
           <a
             href="mailto:aeronvalzado@gmail.com"
             class="inline-block mr-2 ease-in-out duration-300 hover:scale-[1.3] active:opacity-40"
           >
-            <i class="bx bxl-gmail bx-md"></i>
+            <i class="bx bxl-gmail bx-md text-black"></i>
           </a>
           <!-- tis only a jest, unless -->
           <a
             href="./img/GCash.jpg"
             class="inline-block ease-in-out duration-300 hover:scale-[1.3] active:opacity-40"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <i class="bx bxs-donate-heart bx-md bx-tada-hover"></i
+            <i class="bx bxs-donate-heart bx-md bx-tada-hover text-black"></i
           ></a>
         </div>
       </div>
-      <div class="block w-9/12 bg-white p-4 justify-around pr-60">
+      <div class="block w-9/12 bg-zinc-100 p-4 pb-0 justify-around pr-60">
         <section id="about" class="mb-60 scroll-mt-28 mb-96">
           <div class="ml-7">
             <div
@@ -128,382 +134,537 @@
             </div>
           </div>
         </section>
-        <section id="projects" class="mb-60 scroll-mt-28">
+        <hr
+          class="my-28 h-0.5 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-900"
+        />
+        <section id="projects" class="scroll-mt-28 scroll-pb-44">
           <div class="pb-14 ml-7 z-0">
             <div
               class="mb-14 z-0 slide-ltr relative delay-350 bounce sliding-ltr w-fit h-fit"
             >
-              <h1 class="text-3xl font-bold danhda">Recent Projects</h1>
+              <h1 class="text-4xl font-bold danhda">Projects</h1>
             </div>
-            <div class="grid grid-flow-dense grid-rows-2 grid-cols-2 gap-10">
+            <div
+              class="grid grid-flow-dense grid-rows-2 grid-cols-2 gap-10 gap-y-20"
+            >
               <!--? carousel 1 -->
               <div
-                class="bg-gray-500 rounded-xl z-40 hover:z-50 pt-10 px-10"
+                class="z-40 hover:z-50 drop-shadow-2xl"
                 data-aos="fade-down-right"
                 data-aos-offset="200"
               >
-                <div
-                  class="z-50 delay-100 hover:scale-[2] duration-500 w-full h-full group/carousel"
-                >
+                <div>
                   <div
-                    id="carousel-1"
-                    class="relative brightness-75 blur-[0.5px] group-hover/carousel:blur-0 group-hover/carousel:brightness-100 duration-500"
-                    data-twe-carousel-init
-                    data-twe-ride="carousel"
+                    class="z-50 delay-100 hover:scale-[1.6] duration-500 w-full h-full group/carousel1"
                   >
-                    <!--Carousel items-->
                     <div
-                      class="relative rounded-md h-fit w-full overflow-hidden after:clear-both after:block after:content-['']"
+                      id="carousel-1"
+                      class="relative brightness-50 z-20 blur-[0.5px] grayscale group-hover/carousel1:filter-none duration-500"
+                      data-twe-carousel-init
+                      data-twe-ride="carousel"
                     >
-                      <!--First item-->
+                      <!--Carousel items-->
                       <div
-                        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-item
-                        data-twe-carousel-active
+                        class="relative rounded-md h-fit w-full overflow-hidden after:clear-both after:block after:content-['']"
                       >
-                        <img
-                          src="img/carousel_083622.png"
-                          class="block w-full"
-                        />
+                        <!--First item-->
+                        <div
+                          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                          data-twe-carousel-item
+                          data-twe-carousel-active
+                        >
+                          <img
+                            src="img/carousel_083622.png"
+                            class="block w-full"
+                          />
+                        </div>
+                        <!--Second item-->
+                        <div
+                          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                          data-twe-carousel-item
+                        >
+                          <img
+                            src="img/carousel_083912.png"
+                            class="block w-full"
+                          />
+                        </div>
+                        <!--Third item-->
+                        <div
+                          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                          data-twe-carousel-item
+                        >
+                          <img
+                            src="img/carousel_083755.png"
+                            class="block w-full"
+                          />
+                        </div>
                       </div>
-                      <!--Second item-->
-                      <div
-                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-item
-                      >
-                        <img
-                          src="img/carousel_083912.png"
-                          class="block w-full"
-                        />
-                      </div>
-                      <!--Third item-->
-                      <div
-                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-item
-                      >
-                        <img
-                          src="img/carousel_083755.png"
-                          class="block w-full"
-                        />
-                      </div>
-                    </div>
 
-                    <!--Carousel controls - prev item-->
-                    <button
-                      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                      type="button"
-                      data-twe-target="#carousel-1"
-                      data-twe-slide="prev"
-                    >
-                      <span class="inline-block h-8 w-8">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="h-6 w-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15.75 19.5L8.25 12l7.5-7.5"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                        >Previous</span
+                      <!--Carousel controls - prev item-->
+                      <button
+                        class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                        type="button"
+                        data-twe-target="#carousel-1"
+                        data-twe-slide="prev"
                       >
-                    </button>
-                    <!--Carousel controls - next item-->
-                    <button
-                      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                      type="button"
-                      data-twe-target="#carousel-1"
-                      data-twe-slide="next"
-                    >
-                      <span class="inline-block h-8 w-8">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="h-6 w-6"
+                        <span class="inline-block h-8 w-8">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15.75 19.5L8.25 12l7.5-7.5"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                          >Previous</span
                         >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                        >Next</span
+                      </button>
+                      <!--Carousel controls - next item-->
+                      <button
+                        class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                        type="button"
+                        data-twe-target="#carousel-1"
+                        data-twe-slide="next"
                       >
-                    </button>
+                        <span class="inline-block h-8 w-8">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                          >Next</span
+                        >
+                      </button>
+                    </div>
+                    <div
+                      class="invisible float-left z-40 group-hover/carousel1:visible opacity-0 group-hover/carousel1:opacity-100 -translate-y-[2.12rem] group-hover/carousel1:translate-y-0 duration-500 group-hover/carousel1:delay-300"
+                    >
+                      <a
+                        class="p-1 z-50 absolute ease-in-out duration-300 hover:scale-[1.1] active:opacity-40"
+                        href="https://github.com/doidu/simple-website-bootstrap"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i
+                          class="bx bxl-github text-[1.8rem]/7 text-white bg-zinc-900 rounded-md p-px"
+                        ></i
+                      ></a>
+                    </div>
+                    <div
+                      class="invisible float-left z-40 group-hover/carousel1:visible opacity-0 group-hover/carousel1:opacity-100 translate-x-9 -translate-y-[2.12rem] group-hover/carousel1:translate-y-0 duration-500 group-hover/carousel1:delay-500"
+                    >
+                      <a
+                        class="p-1 z-50 absolute ease-in-out duration-300 hover:scale-[1.1] active:opacity-40"
+                        href="https://doidu.github.io/simple-website-bootstrap/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i
+                          class="bx bx-globe text-[1.8rem]/7 text-white bg-zinc-900 rounded-md p-px"
+                        ></i
+                      ></a>
+                    </div>
                   </div>
-                  <h1 class="font-medium">Simple Website Using Bootstrap</h1>
+                  <h1 class="mt-2 text-2xl">Simple Website with Bootstrap</h1>
                 </div>
               </div>
               <!--? carousel 2 -->
               <div
-                class="bg-gray-500 rounded-xl z-40 hover:z-50 pt-10 px-10"
+                class="z-40 hover:z-50 drop-shadow-2xl"
                 data-aos="fade-down-right"
                 data-aos-delay="200"
                 data-aos-offset="200"
               >
-                <div
-                  class="z-50 delay-100 hover:scale-[2] duration-500 w-full h-full group/carousel"
-                >
+                <div>
                   <div
-                    id="carousel-2"
-                    class="relative brightness-75 blur-[0.5px] group-hover/carousel:blur-0 group-hover/carousel:brightness-100 duration-500"
-                    data-twe-carousel-init
-                    data-twe-ride="carousel"
+                    class="z-50 delay-100 hover:scale-[1.6] duration-500 w-full h-full group/carousel2"
                   >
-                    <!--Carousel items-->
                     <div
-                      class="relative rounded-md h-fit w-full overflow-hidden after:clear-both after:block after:content-['']"
+                      id="carousel-2"
+                      class="relative brightness-50 z-20 blur-[0.5px] grayscale group-hover/carousel2:filter-none duration-500"
+                      data-twe-carousel-init
+                      data-twe-ride="carousel"
                     >
-                      <!--First item-->
+                      <!--Carousel items-->
                       <div
-                        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-item
-                        data-twe-carousel-active
+                        class="relative rounded-md h-fit w-full overflow-hidden after:clear-both after:block after:content-['']"
                       >
-                        <img
-                          src="img/carousel_083622.png"
-                          class="block w-full"
-                        />
+                        <!--First item-->
+                        <div
+                          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                          data-twe-carousel-item
+                          data-twe-carousel-active
+                        >
+                          <img
+                            src="img/carousel_083622.png"
+                            class="block w-full"
+                          />
+                        </div>
+                        <!--Second item-->
+                        <div
+                          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                          data-twe-carousel-item
+                        >
+                          <img
+                            src="img/carousel_083912.png"
+                            class="block w-full"
+                          />
+                        </div>
+                        <!--Third item-->
+                        <div
+                          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                          data-twe-carousel-item
+                        >
+                          <img
+                            src="img/carousel_083755.png"
+                            class="block w-full"
+                          />
+                        </div>
                       </div>
-                      <!--Second item-->
-                      <div
-                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-item
-                      >
-                        <img
-                          src="img/carousel_083912.png"
-                          class="block w-full"
-                        />
-                      </div>
-                      <!--Third item-->
-                      <div
-                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-item
-                      >
-                        <img
-                          src="img/carousel_083755.png"
-                          class="block w-full"
-                        />
-                      </div>
-                    </div>
 
-                    <!--Carousel controls - prev item-->
-                    <button
-                      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                      type="button"
-                      data-twe-target="#carousel-2"
-                      data-twe-slide="prev"
-                    >
-                      <span class="inline-block h-8 w-8">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="h-6 w-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15.75 19.5L8.25 12l7.5-7.5"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                        >Previous</span
+                      <!--Carousel controls - prev item-->
+                      <button
+                        class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                        type="button"
+                        data-twe-target="#carousel-2"
+                        data-twe-slide="prev"
                       >
-                    </button>
-                    <!--Carousel controls - next item-->
-                    <button
-                      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                      type="button"
-                      data-twe-target="#carousel-2"
-                      data-twe-slide="next"
-                    >
-                      <span class="inline-block h-8 w-8">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="h-6 w-6"
+                        <span class="inline-block h-8 w-8">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M15.75 19.5L8.25 12l7.5-7.5"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                          >Previous</span
                         >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                        >Next</span
+                      </button>
+                      <!--Carousel controls - next item-->
+                      <button
+                        class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                        type="button"
+                        data-twe-target="#carousel-2"
+                        data-twe-slide="next"
                       >
-                    </button>
+                        <span class="inline-block h-8 w-8">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="h-6 w-6"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                            />
+                          </svg>
+                        </span>
+                        <span
+                          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                          >Next</span
+                        >
+                      </button>
+                    </div>
+                    <div
+                      class="invisible absolute float-left z-40 group-hover/carousel2:visible opacity-0 group-hover/carousel2:opacity-100 -translate-y-[2.12rem] group-hover/carousel2:translate-y-0 duration-500 group-hover/carousel2:delay-300"
+                    >
+                      <a
+                        class="p-1 z-50 absolute ease-in-out duration-300 hover:scale-[1.1] active:opacity-40"
+                        href="https://github.com/doidu"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i
+                          class="bx bxl-github text-[1.8rem]/7 text-white bg-zinc-900 rounded-md p-px"
+                        ></i
+                      ></a>
+                    </div>
                   </div>
-                  <h1 class="font-medium">Some Text</h1>
+                  <h1 class="mt-2 text-2xl">Some Text</h1>
                 </div>
               </div>
               <!--? carousel 3 -->
               <div
-                class="bg-gray-500 rounded-xl hover:z-50 z-40 pt-10 px-28 col-span-2 scroll-mb-28"
+                class="col-span-2 scroll-mb-28"
                 data-aos="fade-down-right"
                 data-aos-offset="-20"
                 data-aos-delay="75"
               >
                 <div
-                  class="z-50 delay-100 hover:scale-[1.4] duration-500 w-full h-full group/carousel"
+                  class="z-20 hover:z-50 justify-items-center drop-shadow-2xl"
                 >
-                  <div
-                    id="carousel-3"
-                    class="relative brightness-75 blur-[0.5px] group-hover/carousel:blur-0 group-hover/carousel:brightness-100 duration-500"
-                    data-twe-carousel-init
-                    data-twe-ride="carousel"
-                  >
-                    <!--Carousel items-->
+                  <div>
                     <div
-                      class="relative rounded-md h-fit w-full overflow-hidden after:clear-both after:block after:content-['']"
+                      class="z-20 delay-100 hover:scale-[1.6] duration-500 w-96 h-full group/carousel3"
                     >
-                      <!--First item-->
                       <div
-                        class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-item
-                        data-twe-carousel-active
+                        id="carousel-3"
+                        class="relative brightness-50 z-20 blur-[0.5px] grayscale group-hover/carousel3:filter-none duration-500"
+                        data-twe-carousel-init
+                        data-twe-ride="carousel"
                       >
-                        <img
-                          src="img/carousel_083622.png"
-                          class="block w-full"
-                        />
+                        <!--Carousel items-->
+                        <div
+                          class="relative rounded-md h-fit w-full overflow-hidden after:clear-both after:block after:content-['']"
+                        >
+                          <!--First item-->
+                          <div
+                            class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-twe-carousel-item
+                            data-twe-carousel-active
+                          >
+                            <img
+                              src="img/carousel_191837.png"
+                              class="block w-full"
+                            />
+                          </div>
+                          <!--Second item-->
+                          <div
+                            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-twe-carousel-item
+                          >
+                            <img
+                              src="img/carousel_191945.png"
+                              class="block w-full"
+                            />
+                          </div>
+                          <!--Third item-->
+                          <div
+                            class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                            data-twe-carousel-item
+                          >
+                            <img
+                              src="img/carousel_192226.png"
+                              class="block w-full"
+                            />
+                          </div>
+                        </div>
+
+                        <!--Carousel controls - prev item-->
+                        <button
+                          class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                          type="button"
+                          data-twe-target="#carousel-3"
+                          data-twe-slide="prev"
+                        >
+                          <span class="inline-block h-8 w-8">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.75 19.5L8.25 12l7.5-7.5"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                            >Previous</span
+                          >
+                        </button>
+                        <!--Carousel controls - next item-->
+                        <button
+                          class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                          type="button"
+                          data-twe-target="#carousel-3"
+                          data-twe-slide="next"
+                        >
+                          <span class="inline-block h-8 w-8">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="h-6 w-6"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                              />
+                            </svg>
+                          </span>
+                          <span
+                            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                            >Next</span
+                          >
+                        </button>
                       </div>
-                      <!--Second item-->
                       <div
-                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-item
+                        class="invisible float-left z-40 group-hover/carousel3:visible opacity-0 group-hover/carousel3:opacity-100 -translate-y-[2.12rem] group-hover/carousel3:translate-y-0 duration-500 group-hover/carousel3:delay-300"
                       >
-                        <img
-                          src="img/carousel_083912.png"
-                          class="block w-full"
-                        />
-                      </div>
-                      <!--Third item-->
-                      <div
-                        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                        data-twe-carousel-item
-                      >
-                        <img
-                          src="img/carousel_083755.png"
-                          class="block w-full"
-                        />
+                        <a
+                          class="p-1 z-50 absolute ease-in-out duration-300 hover:scale-[1.1] active:opacity-40"
+                          href="https://github.com/doidu/student-management-Python-Tkinter"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i
+                            class="bx bxl-github text-[1.8rem]/7 text-white bg-zinc-900 rounded-md p-px"
+                          ></i
+                        ></a>
                       </div>
                     </div>
-
-                    <!--Carousel controls - prev item-->
-                    <button
-                      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                      type="button"
-                      data-twe-target="#carousel-3"
-                      data-twe-slide="prev"
-                    >
-                      <span class="inline-block h-8 w-8">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="h-6 w-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M15.75 19.5L8.25 12l7.5-7.5"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                        >Previous</span
-                      >
-                    </button>
-                    <!--Carousel controls - next item-->
-                    <button
-                      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-                      type="button"
-                      data-twe-target="#carousel-3"
-                      data-twe-slide="next"
-                    >
-                      <span class="inline-block h-8 w-8">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="h-6 w-6"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                          />
-                        </svg>
-                      </span>
-                      <span
-                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-                        >Next</span
-                      >
-                    </button>
+                    <h1 class="mt-2 text-2xl">
+                      Student Management - Python with Tkinter
+                    </h1>
                   </div>
-                  <h1 class="font-medium">Place Holder Text</h1>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section id="contact" class="scroll-mt-28">
-          <div class="pb-14 ml-7 z-0">
-            <div
-              class="mb-10 z-0 slide-ltr relative delay-350 bounce sliding-ltr w-fit h-fit"
-            >
-              <h1 class="text-3xl font-bold danhda">Contact</h1>
-            </div>
-            <div class="justify-items-center py-52">
-              <h1>CENTER</h1>
+        <hr
+          class="my-28 h-0.5 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-900"
+        />
+        <section id="contact" class="scroll-mb-28">
+          <div class="pb-14 z-0">
+            <div class="justify-items-center">
+              <div
+                class="flex items-center justify-start rounded-xl bg-zinc-200 p-24"
+                data-aos="fade-down-right"
+                data-aos-offset="300"
+              >
+                <div class="mx-auto w-full max-w-lg">
+                  <h1 class="text-4xl font-medium danhda">Contact Me</h1>
+                  <p class="mt-3 text-lg">
+                    Email me at
+                    <a
+                      class="underline underline-offset-4"
+                      href="mailto:aeronvalzado@gmail.com"
+                    >
+                      aeronvalzado@gmail.com</a
+                    >,<br />Or message me here:
+                  </p>
+
+                  <form
+                    action="https://api.web3forms.com/submit"
+                    class="mt-10"
+                    method="POST"
+                  >
+                    <input
+                      type="hidden"
+                      name="access_key"
+                      value="cff5bfad-cb27-44f5-9c6d-996ca05b65c4"
+                    />
+                    <div class="grid gap-6 sm:grid-cols-2">
+                      <div class="relative z-0">
+                        <input
+                          type="text"
+                          name="name"
+                          class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                          placeholder=" "
+                        />
+                        <label
+                          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                          >Your name</label
+                        >
+                      </div>
+                      <div class="relative z-0">
+                        <input
+                          type="text"
+                          name="email"
+                          class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                          placeholder=" "
+                        />
+                        <label
+                          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                          >Your email</label
+                        >
+                      </div>
+                      <div class="relative z-0 col-span-2">
+                        <textarea
+                          name="message"
+                          rows="5"
+                          class="peer block min-h-24 w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                          placeholder=" "
+                        ></textarea>
+                        <label
+                          class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-lg text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500"
+                          >Your message</label
+                        >
+                      </div>
+                    </div>
+                    <button
+                      type="submit"
+                      class="mt-4 rounded-md bg-black px-10 py-2 text-white"
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <footer class="">
-          <div class="mt-auto justify-items-center h-44 text-center z-50 miso">
-            <p class="pt-10">
+        <footer>
+          <div class="mt-auto pb-24 justify-items-center text-center z-50 miso">
+            <p class="text-md">
               &copy; Copyright, All Rights Reserved. ron 2024.<br />
               Built with
               <a
                 class="underline underline-offset-4"
                 href="https://tailwindcss.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Tailwind CSS</a
-              >. All Text Set Using
+              >. All Text Set in
               <a
                 class="underline underline-offset-4"
                 href="#https://republi.sh/#danhda/info"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Danh Da</a
-              >, and <a class="underline underline-offset-4" href="#">Miso</a>.
+              >, and
+              <a
+                class="underline underline-offset-4"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Miso</a
+              >.
             </p>
           </div>
         </footer>

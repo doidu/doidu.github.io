@@ -6,5 +6,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant }) => {
+      addVariant("group-hover", ":merge(.group):hover &");
+      addVariant("group-active", ":merge(.group):active &");
+    }),
+  ],
 };

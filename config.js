@@ -3,6 +3,6 @@ window.onload = function () {
     sectionSelector: "section",
     targetSelector: ".nav-link",
     offset: 300,
-    activeClass: "cur-color",
+    activeClass: "cur-color text-zinc-400",
   });
 };

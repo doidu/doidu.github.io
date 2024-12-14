@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      rel="preload"
+      src="https://cdn.tailwindcss.com"
+      as="script"
+    ></script>
     <link rel="stylesheet" type="text/css" href="./include.css" />
-    <link rel="stylesheet" type="text/css" href="./webfonts/fonts.css" />
+    <link
+      rel="preload"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+      type="text/css"
+      href="./webfonts/fonts.css"
+    />
     <link rel="stylesheet" href="node_modules/boxicons/css/boxicons.min.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -20,22 +31,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"
     />
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          fontFamily: {
-            sans: ["Roboto", "sans-serif"],
-            body: ["Roboto", "sans-serif"],
-            mono: ["ui-monospace", "monospace"],
-          },
-        },
-        corePlugins: {
-          preflight: false,
-        },
-      };
-    </script>
-    <title>Aeron Valzado</title>
+    <title>ron</title>
   </head>
 
   <body class="">
@@ -52,29 +48,46 @@
             I wanna be a billionaire so f*cking bad,<br />
             buy all of the things I never had
           </h6>
-          <ul class="list-none mt-10 danhda text-2xl tracking-widest">
-            <li class="mb-2 my-3">
-              <a
-                href="#"
-                class="ps-2 pr-[6.13rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-zinc-400 duration-[400ms,700ms] transition-[color,box-shadow]"
-                >About</a
-              >
-            </li>
-            <li class="mb-2 my-3">
-              <a
-                href="#projects"
-                class="ps-2 pr-[4.5rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-zinc-400 duration-[400ms,700ms] transition-[color,box-shadow]"
-                >Projects</a
-              >
-            </li>
-            <li class="mb-2 my-3">
-              <a
-                href="#contact"
-                class="ps-2 pr-[5rem] pb-2 rounded-md text-gray-800 hover:text-gray-100 hover:shadow-[inset_15rem_0_0_0] hover:shadow-zinc-400 duration-[400ms,700ms] transition-[color,box-shadow]"
-                >Contact</a
-              >
-            </li>
-          </ul>
+          <div>
+            <ul
+              id="navMain"
+              class="list-none mt-10 danhda text-2xl tracking-widest"
+            >
+              <li class="mb-2 my-3">
+                <a
+                  href="#about"
+                  class="nav-link group/a pr-[6.13rem] pb-2 rounded-md text-zinc-900 hover:text-zinc-400 duration-300"
+                  ><div
+                    id="line-div"
+                    class="nav-div inline-block mb-2 w-4 h-0.5 border-t-0 bg-zinc-900 group-hover/a:w-12 group-hover/a:bg-zinc-400 duration-200"
+                  ></div>
+                  About</a
+                >
+              </li>
+              <li class="mb-2 my-3">
+                <a
+                  href="#projects"
+                  class="nav-link group/b pr-[6.13rem] pb-2 rounded-md text-zinc-900 hover:text-zinc-400 duration-300"
+                  ><div
+                    id="line-div"
+                    class="nav-div inline-block mb-2 h-0.5 w-4 border-t-0 bg-zinc-900 group-hover/b:w-12 group-hover/b:bg-zinc-400 duration-200"
+                  ></div>
+                  Projects</a
+                >
+              </li>
+              <li class="mb-2 my-3">
+                <a
+                  href="#contact"
+                  class="nav-link group/c pr-[6.13rem] pb-2 rounded-md text-zinc-900 hover:text-zinc-400 duration-300"
+                  ><div
+                    id="line-div"
+                    class="nav-div inline-block mb-2 h-0.5 w-4 border-t-0 bg-zinc-900 group-hover/c:w-12 group-hover/c:bg-zinc-400 duration-200"
+                  ></div>
+                  Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="block mt-auto absolute bottom-0 mb-24">
@@ -111,11 +124,11 @@
           ></a>
         </div>
       </div>
-      <div class="block w-9/12 bg-zinc-100 p-4 pb-0 justify-around pr-60">
+      <div class="block w-9/12 bg-zinc-100 justify-around pr-60">
         <section id="about" class="mb-60 scroll-mt-28 mb-96">
-          <div class="ml-7">
+          <div class="mx-7">
             <div
-              class="text-center text-pretty text-xl z-40 px-24 pt-40 slide-ttb relative delay-500 bounce sliding-ttb w-full h-[30%]"
+              class="text-center text-pretty text-xl z-40 px-24 pt-40 sliding-ttb slide-ttb relative bounce"
             >
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -137,19 +150,17 @@
         <hr
           class="my-28 h-0.5 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-900"
         />
-        <section id="projects" class="scroll-mt-28 scroll-pb-44">
-          <div class="pb-14 ml-7 z-0">
-            <div
-              class="mb-14 z-0 slide-ltr relative delay-350 bounce sliding-ltr w-fit h-fit"
-            >
+        <section id="projects" class="scroll-mt-28 scroll-pb-24">
+          <div class="mx-7 z-0">
+            <div class="mb-14 pb-2 z-0 sliding-ltr slide-ltr relative bounce">
               <h1 class="text-4xl font-bold danhda">Projects</h1>
             </div>
             <div
-              class="grid grid-flow-dense grid-rows-2 grid-cols-2 gap-10 gap-y-20"
+              class="grid grid-flow-dense grid-rows-2 grid-cols-2 gap-10 gap-y-24 justify-items-center"
             >
               <!--? carousel 1 -->
               <div
-                class="z-40 hover:z-50 drop-shadow-2xl"
+                class="z-40 hover:z-50 drop-shadow-2xl transition-all"
                 data-aos="fade-down-right"
                 data-aos-offset="200"
               >
@@ -291,7 +302,7 @@
               </div>
               <!--? carousel 2 -->
               <div
-                class="z-40 hover:z-50 drop-shadow-2xl"
+                class="z-20 hover:z-50 drop-shadow-2xl transition-all"
                 data-aos="fade-down-right"
                 data-aos-delay="200"
                 data-aos-offset="200"
@@ -401,11 +412,11 @@
                       </button>
                     </div>
                     <div
-                      class="invisible absolute float-left z-40 group-hover/carousel2:visible opacity-0 group-hover/carousel2:opacity-100 -translate-y-[2.12rem] group-hover/carousel2:translate-y-0 duration-500 group-hover/carousel2:delay-300"
+                      class="invisible float-left z-40 group-hover/carousel2:visible opacity-0 group-hover/carousel2:opacity-100 -translate-y-[2.12rem] group-hover/carousel2:translate-y-0 duration-500 group-hover/carousel2:delay-300"
                     >
                       <a
                         class="p-1 z-50 absolute ease-in-out duration-300 hover:scale-[1.1] active:opacity-40"
-                        href="https://github.com/doidu"
+                        href="https://github.com/doidu/simple-website-bootstrap"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -422,15 +433,14 @@
               <div
                 class="col-span-2 scroll-mb-28"
                 data-aos="fade-down-right"
-                data-aos-offset="100"
-                data-aos-delay="75"
+                data-aos-offset="200"
               >
                 <div
-                  class="z-20 hover:z-50 justify-items-center drop-shadow-2xl"
+                  class="z-20 hover:z-50 justify-items-center drop-shadow-2xl transition-all"
                 >
                   <div>
                     <div
-                      class="z-20 delay-100 hover:scale-[1.6] duration-500 w-96 h-full group/carousel3"
+                      class="z-20 delay-100 hover:scale-[1.6] duration-500 w-[24.8rem] h-max group/carousel3"
                     >
                       <div
                         id="carousel-3"
@@ -560,7 +570,7 @@
           class="my-28 h-0.5 border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-900"
         />
         <section id="contact" class="scroll-mb-28">
-          <div class="pb-14 z-0">
+          <div class="pb-14 mx-7 z-0">
             <div class="justify-items-center">
               <div
                 class="flex items-center justify-start rounded-xl bg-zinc-200 p-24"
@@ -650,7 +660,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 >Tailwind CSS</a
-              >. All Text Set in
+              >. All text set in
               <a
                 class="underline underline-offset-4"
                 href="#https://republi.sh/#danhda/info"
@@ -674,7 +684,7 @@
     <script type="text/javascript">
       import "boxicons";
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.x/dist/scrollspy.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

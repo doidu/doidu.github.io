@@ -157,7 +157,7 @@
 }
 
 .cur-color {
-  color: rgb(161 161 170);
+  color: rgb(161 161 170) !important;
 }
 .cur-color > div {
   background-color: rgb(161 161 170);

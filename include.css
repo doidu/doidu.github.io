@@ -142,19 +142,6 @@
     font-family: "miso-regular", monospace;
   }
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 2s ease-in forwards;
-}
 
 .cur-color {
   color: rgb(161 161 170) !important;

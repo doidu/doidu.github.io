@@ -45,10 +45,11 @@
 
   <body class="bg-zinc-100 atom:max-[200px]:hidden">
     <div
-      class="flex px-60 bg-zinc-100 atom:max-lg:px-12 atom:max-lg:block atom:max-sm:px-7 atom:max-lg:pt-14"
+      class="flex px-60 bg-zinc-100 atom:max-lg:px-12 lg:max-2xl:px-20 atom:max-lg:block atom:max-sm:px-7 atom:max-lg:pt-14"
     >
       <div
-        class="w-6/12 h-screen sticky z-30 top-0 pt-20 mb-auto bg-zinc-100 atom:max-lg:w-full atom:max-lg:h-fit block atom:max-lg:z-50 atom:max-lg:p-0 atom:max-lg:relative"
+        id="nav-parent"
+        class="nav-container w-6/12 h-screen sticky z-30 top-0 pt-20 mb-auto bg-zinc-100 atom:max-lg:w-full atom:max-lg:h-fit block atom:max-lg:z-50 atom:max-lg:p-0 atom:max-lg:relative lg:max-xl:pt-0"
       >
         <div class="block mb-auto z-30">
           <h1 class="text-9xl tracking-normal mb-4 danhda text-zinc-700">
@@ -103,7 +104,9 @@
           </div>
         </div>
 
-        <div class="block mt-auto absolute bottom-0 mb-24 atom:max-lg:relative">
+        <div
+          class="block mt-auto absolute bottom-0 mb-24 atom:max-xl:relative lg:max-xl:mt-16"
+        >
           <a
             href="https://github.com/doidu"
             class="inline-block mr-2 ease-in-out duration-300 hover:scale-[1.3] active:opacity-40"
@@ -142,7 +145,7 @@
       <div
         class="block w-9/12 bg-zinc-100 justify-around atom:max-lg:w-full atom:max-lg:h-9/12"
       >
-        <section id="about" class="mb-60 scroll-mt-28">
+        <section id="about" class="nav-container mb-60 scroll-mt-28">
           <div class="mx-7 atom:max-lg:mx-0">
             <div
               class="text-start text-pretty text-zinc-900 z-40 pt-40 sliding-ttb slide-ttb relative bounce atom:max-lg:pt-10"
@@ -177,8 +180,14 @@
         />
         <section id="projects" class="scroll-mt-28 scroll-pb-24">
           <div class="mx-7 z-0 atom:max-lg:mx-0">
-            <div class="mb-14 pb-2 z-0 sliding-ltr slide-ltr relative bounce">
-              <h1 class="text-4xl font-bold danhda text-black">Projects</h1>
+            <div
+              class="nav-bar mb-14 pb-2 z-0 sliding-ltr slide-ltr relative bounce atom:max-lg:sticky atom:max-lg:top-0 atom:max-lg:bg-zinc-100 atom:max-lg:w-screen atom:max-lg:-mx-12 atom:max-sm:-mx-7 atom:max-lg:z-50 atom:max-lg:box-shadow-2xl"
+            >
+              <h1
+                class="text-4xl font-bold danhda text-black atom:max-lg:mx-12 atom:max-sm:mx-7 atom:max-lg:py-2"
+              >
+                Projects
+              </h1>
             </div>
             <div
               class="grid grid-flow-dense grid-rows-2 grid-cols-2 gap-10 gap-y-24 justify-items-center atom:max-lg:grid-cols-1"
@@ -294,7 +303,7 @@
                       </button>
                     </div>
                     <div
-                      class="invisible float-left z-40 scale-[1.5] atom:max-lg:float-right atom:max-lg:-translate-x-14 group-hover/carousel1:visible opacity-0 group-hover/carousel1:opacity-100 -translate-y-[2.12rem] group-hover/carousel1:translate-y-0 duration-500 group-hover/carousel1:delay-300"
+                      class="invisible float-left z-40 atom:max-lg:scale-[1.5] atom:max-lg:float-right atom:max-lg:-translate-x-14 group-hover/carousel1:visible opacity-0 group-hover/carousel1:opacity-100 -translate-y-[2.12rem] group-hover/carousel1:translate-y-0 duration-500 group-hover/carousel1:delay-300"
                     >
                       <a
                         class="p-1 z-50 absolute ease-in-out duration-300 hover:scale-[1.1] active:opacity-40"
@@ -308,7 +317,7 @@
                       ></a>
                     </div>
                     <div
-                      class="invisible float-left z-40 scale-[1.5] atom:max-lg:float-right atom:max-lg:-translate-x-[6.8rem] group-hover/carousel1:visible opacity-0 group-hover/carousel1:opacity-100 translate-x-9 -translate-y-[2.12rem] group-hover/carousel1:translate-y-0 duration-500 group-hover/carousel1:delay-500"
+                      class="invisible float-left z-40 atom:max-lg:scale-[1.5] atom:max-lg:float-right atom:max-lg:-translate-x-[6.8rem] group-hover/carousel1:visible opacity-0 group-hover/carousel1:opacity-100 translate-x-9 -translate-y-[2.12rem] group-hover/carousel1:translate-y-0 duration-500 group-hover/carousel1:delay-500"
                     >
                       <a
                         class="p-1 z-50 absolute ease-in-out duration-300 hover:scale-[1.1] active:opacity-40"
@@ -429,7 +438,7 @@
                       </button>
                     </div>
                     <div
-                      class="invisible float-left z-40 scale-[1.5] atom:max-lg:float-right atom:max-lg:-translate-x-14 group-hover/carousel2:visible opacity-0 group-hover/carousel2:opacity-100 -translate-y-[2.12rem] group-hover/carousel2:translate-y-0 duration-500 group-hover/carousel2:delay-300"
+                      class="invisible float-left z-40 atom:max-lg:scale-[1.5] atom:max-lg:float-right atom:max-lg:-translate-x-14 group-hover/carousel2:visible opacity-0 group-hover/carousel2:opacity-100 -translate-y-[2.12rem] group-hover/carousel2:translate-y-0 duration-500 group-hover/carousel2:delay-300"
                     >
                       <a
                         class="p-1 z-50 absolute ease-in-out duration-300 hover:scale-[1.1] active:opacity-40"
@@ -559,7 +568,7 @@
                       </button>
                     </div>
                     <div
-                      class="invisible float-left z-40 scale-[1.5] atom:max-lg:float-right atom:max-lg:-translate-x-14 group-hover/carousel3:visible opacity-0 group-hover/carousel3:opacity-100 -translate-y-[2.12rem] group-hover/carousel3:translate-y-0 duration-500 group-hover/carousel3:delay-300"
+                      class="invisible float-left z-40 atom:max-lg:scale-[1.5] atom:max-lg:float-right atom:max-lg:-translate-x-14 group-hover/carousel3:visible opacity-0 group-hover/carousel3:opacity-100 -translate-y-[2.12rem] group-hover/carousel3:translate-y-0 duration-500 group-hover/carousel3:delay-300"
                     >
                       <a
                         class="p-1 z-50 absolute ease-in-out duration-300 hover:scale-[1.1] active:opacity-40"
@@ -607,7 +616,7 @@
           <div class="mb-14 mx-7 z-0 atom:max-lg:mx-0">
             <div class="justify-items-center">
               <div
-                class="flex items-center justify-start rounded-xl bg-zinc-200 p-24 atom:max-lg:py-12 atom:max-lg:p-10"
+                class="flex items-center justify-start rounded-xl bg-zinc-200 p-24 atom:max-lg:py-14 atom:max-lg:px-10"
                 data-aos="fade-down-right"
                 data-aos-offset="300"
               >

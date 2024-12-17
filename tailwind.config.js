@@ -4,7 +4,11 @@ module.exports = {
     files: ["./src/*.{html,js}"],
   },
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        "atom": "1px", // prettier-ignore
+      },
+    },
   },
   plugins: [
     plugin(({ addVariant }) => {

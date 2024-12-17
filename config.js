@@ -6,3 +6,12 @@ window.onload = function () {
     activeClass: "cur-color text-zinc-400",
   });
 };
+tailwind.config = {
+  theme: {
+    extend: {
+      screens: {
+        "atom": "0px", // prettier-ignore
+      },
+    },
+  },
+};
